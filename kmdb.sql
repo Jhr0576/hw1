@@ -98,6 +98,7 @@
 -- Turns column mode on but headers off
 .mode column
 .headers off
+.width 21 20 20
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
@@ -126,8 +127,6 @@
 
 -- The SQL statement for the cast output
 -- TODO!
-
-Here we go
 
 
 DROP TABLE IF EXISTS characters;
@@ -345,8 +344,6 @@ Select movies.title, actors.name, characters.name
 From movies 
 Inner Join characters 
 On characters.movie_id = movies.id 
-Inner Join characters 
-On characters.actor_id = actors_id 
-Group by movies.title
-Order by movies.title;
+Inner Join actors
+On characters.actor_id = actors.id;
 
