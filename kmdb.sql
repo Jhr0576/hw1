@@ -130,7 +130,6 @@
 Here we go
 
 
-DROP TABLE IF EXISTS actors;
 DROP TABLE IF EXISTS characters;
 Drop TABLE IF EXISTS movies;
 Drop Table IF EXISTS actors;
@@ -341,3 +340,12 @@ Insert Into characters (
 Values (
     "Selina Kyle"
 );
+
+Select movies.title, actors.name, characters.name 
+From movies 
+Inner Join characters 
+On characters.movie_id = movies.id 
+Inner Join characters 
+On characters.actor_id = actors_id 
+Group by movies.title
+Order by movies.title;
