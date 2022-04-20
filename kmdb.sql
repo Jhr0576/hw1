@@ -129,9 +129,11 @@
 
 Here we go
 
-DROP TABLE IF EXISTS movies;
+
 DROP TABLE IF EXISTS actors;
 DROP TABLE IF EXISTS characters;
+Drop TABLE IF EXISTS movies;
+Drop Table IF EXISTS actors;
 
 CREATE TABLE movies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -151,4 +153,191 @@ CREATE TABLE characters (
   name TEXT,
   actor_id INTEGER,
   movie_id INTEGER
+);
+
+Insert Into movies (
+  title,
+  year_released,
+  rating,
+  studio
+)
+Values (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "Warner Bros."
+);
+
+Insert Into movies (
+  title,
+  year_released,
+  rating,
+  studio
+)
+Values (
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "Warner Bros."
+);
+
+Insert Into movies (
+  title,
+  year_released,
+  rating,
+  studio
+)
+Values (
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "Warner Bros."
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Christian Bale"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Michael Caine"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Liam Neeson"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Katie Holmes"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Gary Oldman"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Heath Ledger"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Aaron Eckhart"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Maggie Gyllenhaal"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Tom Hardy"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Joseph Gordon-Levitt"
+);
+
+Insert Into actors (
+  name
+)
+Values (
+    "Anne Hathaway"
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "Bruce Wayne"
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "Alfred"
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "Ra's Al Ghul"
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "Rachel Dawes"
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "Commissioner Gordon"
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "Joker"
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "Harvey Dent"
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "Bane"
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "John Blake"
+
+);
+
+Insert Into characters (
+  name
+)
+Values (
+    "Selina Kyle"
 );
