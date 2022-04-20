@@ -132,6 +132,7 @@
 DROP TABLE IF EXISTS characters;
 Drop TABLE IF EXISTS movies;
 Drop Table IF EXISTS actors;
+Drop Table IF EXISTS roles;
 
 CREATE TABLE movies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -148,9 +149,14 @@ CREATE TABLE actors (
 
 CREATE TABLE characters (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name TEXT,
+  name TEXT
+);
+
+CREATE TABLE roles (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  movie_id INTEGER,
   actor_id INTEGER,
-  movie_id INTEGER
+  character_id INTEGER
 );
 
 Insert Into movies (
@@ -342,8 +348,9 @@ Values (
 
 Select movies.title, actors.name, characters.name 
 From movies 
-Inner Join characters 
-On characters.movie_id = movies.id 
-Inner Join characters
-On characters.actor_id = actors.id;
-
+Inner Join roles 
+On roles.movie_id = movies.id 
+Inner Join roles
+On roles.actor_id = actors.id
+Inner Join roles
+On roles.character_id = characters.id;
