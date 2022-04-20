@@ -349,3 +349,4 @@ Inner Join characters
 On characters.actor_id = actors_id 
 Group by movies.title
 Order by movies.title;
+
