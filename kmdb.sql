@@ -344,6 +344,6 @@ Select movies.title, actors.name, characters.name
 From movies 
 Inner Join characters 
 On characters.movie_id = movies.id 
-Inner Join actors
+Inner Join characters
 On characters.actor_id = actors.id;
 
