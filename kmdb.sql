@@ -103,38 +103,13 @@
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
 
--- Create new tables, according to your domain model
--- TODO!
-
--- Insert data into your database that reflects the sample data shown above
--- Use hard-coded foreign key IDs when necessary
--- TODO!
-
--- Prints a header for the movies output
-.print "Movies"
-.print "======"
-.print ""
-
-Select * From movies;
-
--- The SQL statement for the movies output
--- TODO!
-
--- Prints a header for the cast output
-.print ""
-.print "Top Cast"
-.print "========"
-.print ""
-
-
--- The SQL statement for the cast output
--- TODO!
-
-
 DROP TABLE IF EXISTS characters;
 Drop TABLE IF EXISTS movies;
 Drop Table IF EXISTS actors;
 Drop Table IF EXISTS roles;
+
+-- Create new tables, according to your domain model
+-- TODO!
 
 CREATE TABLE movies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -160,6 +135,10 @@ CREATE TABLE roles (
   actor_id INTEGER,
   character_id INTEGER
 );
+
+-- Insert data into your database that reflects the sample data shown above
+-- Use hard-coded foreign key IDs when necessary
+-- TODO!
 
 Insert Into movies (
   title,
@@ -513,6 +492,25 @@ Values (
     "10"
 );
 
+-- Prints a header for the movies output
+.print "Movies"
+.print "======"
+.print ""
+
+-- The SQL statement for the movies output
+-- TODO!
+
+Select * From movies;
+
+-- Prints a header for the cast output
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
+
+
+-- The SQL statement for the cast output
+-- TODO!
 
 Select movies.title, actors.name, characters.name 
 From movies 
@@ -522,6 +520,3 @@ Inner Join actors
 On actors.id = roles.actor_id
 Inner Join characters
 On characters.id = roles.character_id;
-
-
-Pre Formatting Changes
