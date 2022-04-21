@@ -350,7 +350,9 @@ Select movies.title, actors.name, characters.name
 From movies 
 Inner Join roles 
 On roles.movie_id = movies.id 
-Inner Join roles
-On roles.actor_id = actors.id
-Inner Join roles
-On roles.character_id = characters.id;
+Inner Join actors
+On actors.id = roles.actor_id
+Inner Join characters
+On characters.id = roles.character_id
+Order by movies.title;
+
