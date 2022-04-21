@@ -346,6 +346,174 @@ Values (
     "Selina Kyle"
 );
 
+Insert Into roles (
+  movie_id
+)
+Values (
+    "1"
+);
+
+Insert Into roles (
+  movie_id
+)
+Values (
+    "2"
+);
+
+Insert Into roles (
+  movie_id
+)
+Values (
+    "3"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "1"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "2"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "3"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "4"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "5"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "6"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "7"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "8"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "9"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "10"
+);
+
+Insert Into roles (
+  actor_id
+)
+Values (
+    "11"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "1"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "2"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "3"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "4"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "5"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "6"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "7"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "8"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "9"
+);
+
+Insert Into roles (
+  character_id
+)
+Values (
+    "10"
+);
+
 Select movies.title, actors.name, characters.name 
 From movies 
 Inner Join roles 
