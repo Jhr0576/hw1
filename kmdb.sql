@@ -519,6 +519,5 @@ On roles.movie_id = movies.id
 Inner Join actors
 On actors.id = roles.actor_id
 Inner Join characters
-On characters.id = roles.character_id
-Group by movies.title;
+On characters.id = roles.character_id;
 
