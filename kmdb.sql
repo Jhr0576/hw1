@@ -522,3 +522,4 @@ Inner Join characters
 On characters.id = roles.character_id;
 
 Praise Up!
+Triple Save
