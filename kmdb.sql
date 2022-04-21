@@ -115,6 +115,8 @@
 .print "======"
 .print ""
 
+Select * From movies;
+
 -- The SQL statement for the movies output
 -- TODO!
 
@@ -520,6 +522,3 @@ Inner Join actors
 On actors.id = roles.actor_id
 Inner Join characters
 On characters.id = roles.character_id;
-
-Praise Up!
-Triple Save
