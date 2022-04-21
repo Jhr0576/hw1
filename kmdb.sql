@@ -347,172 +347,170 @@ Values (
 );
 
 Insert Into roles (
-  movie_id
+  movie_id,
+  actor_id,
+  character_id
 )
 Values (
+    "1",
+    "1",
     "1"
 );
 
 Insert Into roles (
-  movie_id
+  movie_id,
+  actor_id,
+  character_id
 )
 Values (
+    "1",
+    "2",
     "2"
 );
 
 Insert Into roles (
-  movie_id
+  movie_id,
+  actor_id,
+  character_id
 )
 Values (
+    "1",
+    "3",
     "3"
 );
 
 Insert Into roles (
-  actor_id
+  movie_id,
+  actor_id,
+  character_id
 )
 Values (
-    "1"
-);
-
-Insert Into roles (
-  actor_id
-)
-Values (
-    "2"
-);
-
-Insert Into roles (
-  actor_id
-)
-Values (
-    "3"
-);
-
-Insert Into roles (
-  actor_id
-)
-Values (
+    "1",
+    "4",
     "4"
 );
 
 Insert Into roles (
-  actor_id
+  movie_id,
+  actor_id,
+  character_id
 )
 Values (
+    "1",
+    "5",
     "5"
 );
 
 Insert Into roles (
-  actor_id
-)
-Values (
-    "6"
-);
-
-Insert Into roles (
-  actor_id
-)
-Values (
-    "7"
-);
-
-Insert Into roles (
-  actor_id
-)
-Values (
-    "8"
-);
-
-Insert Into roles (
-  actor_id
-)
-Values (
-    "9"
-);
-
-Insert Into roles (
-  actor_id
-)
-Values (
-    "10"
-);
-
-Insert Into roles (
-  actor_id
-)
-Values (
-    "11"
-);
-
-Insert Into roles (
+  movie_id,
+  actor_id,
   character_id
 )
 Values (
+    "2",
+    "1",
     "1"
 );
 
 Insert Into roles (
+  movie_id,
+  actor_id,
   character_id
 )
 Values (
-    "2"
-);
-
-Insert Into roles (
-  character_id
-)
-Values (
-    "3"
-);
-
-Insert Into roles (
-  character_id
-)
-Values (
-    "4"
-);
-
-Insert Into roles (
-  character_id
-)
-Values (
-    "5"
-);
-
-Insert Into roles (
-  character_id
-)
-Values (
+    "2",
+    "6",
     "6"
 );
 
 Insert Into roles (
+  movie_id,
+  actor_id,
   character_id
 )
 Values (
+    "2",
+    "7",
     "7"
 );
 
 Insert Into roles (
+  movie_id,
+  actor_id,
   character_id
 )
 Values (
+    "2",
+    "2",
+    "2"
+);
+
+Insert Into roles (
+  movie_id,
+  actor_id,
+  character_id
+)
+Values (
+    "2",
+    "8",
+    "4"
+);
+
+Insert Into roles (
+  movie_id,
+  actor_id,
+  character_id
+)
+Values (
+    "3",
+    "1",
+    "1"
+);
+
+Insert Into roles (
+  movie_id,
+  actor_id,
+  character_id
+)
+Values (
+    "3",
+    "5",
+    "5"
+);
+
+Insert Into roles (
+  movie_id,
+  actor_id,
+  character_id
+)
+Values (
+    "3",
+    "9",
     "8"
 );
 
 Insert Into roles (
+  movie_id,
+  actor_id,
   character_id
 )
 Values (
+    "3",
+    "10",
     "9"
 );
 
 Insert Into roles (
+  movie_id,
+  actor_id,
   character_id
 )
 Values (
+    "3",
+    "11",
     "10"
 );
+
 
 Select movies.title, actors.name, characters.name 
 From movies 
@@ -522,6 +520,5 @@ Inner Join actors
 On actors.id = roles.actor_id
 Inner Join characters
 On characters.id = roles.character_id
-Group by movies.title
-Order by movies.title;
+Group by movies.title;
 
